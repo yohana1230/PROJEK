@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1">
+        <title>Drapowers/Login</title>
+        <link rel="stylesheet" type="text/css" href="css/style_login.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Lily+Script+One&display=swap');
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="javascript/login.js"></script>
+    </head>
+
+    <!--header-->
+    <header>
+        <div class ="menu">
+            <a href="index.html"><img src="gambar/logo.png"></a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class ="active"><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        
+        <div class ="box">
+            <h1>Login</h1>
+            <h5>Masukkan Username dan Password</h5>
+            <div class = "kotak">
+                <ul>
+                    <form action="" method="post" id="submit"> 
+                        <div class = "input_wrap">              
+                            <li><label for="input_text">Username</label></li><br>
+                            <div class="input_field">
+                                <li><input type="text" id="input_text" class="input"></li><br><br>
+                            </div>
+                        </div>
+
+                        <div class = "input_wrap">
+                            <li><label for="input_text">Password</label></li><br>
+                            <div class="input_field">
+                                <li><input type="password" id="input_password" class="input"></li><br>
+                            </div>
+                        </div>
+
+                        <div class="input_wrap">
+                            <span class="error_msg">Invalid Username and/or Password.</span>
+                            <button type="submit" value="Login" id="login_btn" class="btn">Login</button>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+
+            <script>
+                var input_text = document.querySelector('#input_text');
+                var input_password = document.querySelector('#input_password');
+                var error_msg = document.querySelector('.error_msg');
+                var login_btn = document.querySelector('.btn');
+                error_msg.style.display = "none";
+
+                $('#submit').submit(function (e){
+                    e.preventDefault();
+
+                    if(input_text.value == "admin" && input_password.value == "admin"){
+                        error_msg.style.display = "none";
+                        alert("Login Successfully.");
+                        window.location.href = "masuk.html";  
+                    } 
+                    
+                    else {
+                        if(input_text.value == "" || input_password.value == ""){
+                            error_msg.style.display = "inline-block";
+                            input_text.style.border = "1px solid #f4040";
+                            return false;
+                        } 
+                        else{
+                            error_msg.style.display = "inline-block";
+                            input_text.style.border = "1px solid #f4040";
+                            return false;
+                        }
+                    }
+                });
+            </script>
+        </div>
+
+        <footer>
+            <div class="foot"></div>
+            <small>Copyright &copy; 2023 - Devi (3.34.30.3.06) & Yohana (3.34.30.3.26).</small><br/>
+            <small> All Rights Reserved.</small>
+        </footer>
+    </body>

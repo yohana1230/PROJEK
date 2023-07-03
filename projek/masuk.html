@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1">
+        <title>Drapowers</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Lily+Script+One&display=swap');
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="javascript/navigasi_menu.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Loader -->
+        <div class = "bg-loader">
+            <div class = "loader"></div>
+        </div>
+
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                $(".bg-loader").hide();
+            })
+        </script>
+
+
+        <!--header-->
+        <header>
+            <div class ="menu">
+                <a href="masuk.html"><img src="gambar/logo.png"></a>
+                <ul>
+                    <li class ="active"><a href="#index">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="cm.html">C&M</a></li>
+                    <li><a href="#info">INFO</a></li>
+                    <li><a href="Index.html">LOGOUT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Banner-->
+        <div id="index" class="banner">
+            <div class="background"></div>
+            <div class="isi">
+                <img src="gambar/bunga.png">
+                <h6>W E L C O M E </h6><br/>
+                <h5>Monitoring dan Controlling System</h5>
+                <h1>Draying Frangipani Flowers</h2>
+            </div>
+        </div>
+
+        <!--ABOUT-->
+        <div id="about" class = "about">
+            <h1>About Drapowers</h1>
+            <p><strong>Drapowers</strong> merupakan sebuah alat yang digunakan dalam proses pengeringan bunga kemboja berbasis Internet of things (IoT) yang membantu proses monitoring melalui web</p>
+            <img src="gambar/alat1.png">
+        </div>
+
+        <!--INFO-->
+        <div id="info" class="info">
+            <h1>Profile’s Team</h1>
+            <div class="row">
+                <!--Kolom 1-->
+                <div class = "column">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="gambar/devi.jpg"/>
+                        </div>
+                        <h3>Devi Erwita</h3>
+                        <h5>3.34.20.3.06</h5>
+                        <div class="icon">
+                            <ul>
+                                <li><a href="https://www.instagram.com/devierwt/"><img src="gambar/ig.png"></a></li>
+                                <li><a href="https://www.youtube.com/@cyberpinksmg"><img src="gambar/youtube.png"></a></li>
+                                <li><a href="https://web.telegram.org/k/#@devimg"><img src="gambar/telegram.png"></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!--Kolom 2-->
+                 <div class = "column">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="gambar/yohana.jpg"/>
+                        </div>
+                        <h3>Yohana Putri Kusumastuti</h3>
+                        <h5>3.34.20.3.26</h5>
+                        <div class="icon">
+                            <ul>
+                                <li><a href="https://www.instagram.com/yohanaputrii_/"><img src="gambar/ig.png"></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCknTGiQ_PKKG6do-4BF7iXA"><img src="gambar/youtube.png"></a></li>
+                                <li><a href="https://web.telegram.org/k/#@yohana090"><img src="gambar/telegram.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="foot"></div>
+            <small>Copyright &copy; 2023 - Devi (3.34.30.3.06) & Yohana (3.34.30.3.26).</small><br/>
+            <small> All Rights Reserved.</small>
+        </footer>
+    </body>
+
+</html>
+
+

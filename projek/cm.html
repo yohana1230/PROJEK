@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1">
+        <title>Drapowers</title>
+        <link rel="stylesheet" type="text/css" href="css/style_cm.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Lily+Script+One&display=swap');
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="javascript/navigasi_menu.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Loader -->
+        <div class = "bg-loader">
+            <div class = "loader"></div>
+        </div>
+
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                $(".bg-loader").hide();
+            })
+        </script>
+
+
+        <!--header-->
+        <header>
+            <div class ="menu">
+                <a href="masuk.html"><img src="gambar/logo.png"></a>
+                <ul>
+                    <li><a href="masuk.html">HOME</a></li>
+                    <li class ="active"><a href="#cm">C&M</a></li>
+                    <li><a href="Index.html">LOGOUT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <body>
+            <div class ="box">
+                <h1>Controlling & Monitoring</h1>
+                <div class = "kotak">
+                   <!--Suhu-->
+                   <div class = "cards">
+                        <div class = "sensor">
+                            <h2>T e m p e r a t u r e</h2>
+                            <p><span id ="suhu"></span> °C</p>
+                        </div>
+                   </div>
+
+                   <!--Kelembapan-->
+                   <div class = "cards">
+                        <div class = "sensor">
+                            <h2>H u m i d i t y</h2>
+                            <p><span id ="kelembapan"></span> %</p>
+                        </div>
+                   </div>
+
+                   <!--Tekanan-->
+                   <div class = "cards">
+                        <div class = "sensor">
+                            <h2>P r e s s u r e</h2>
+                            <p><span id ="tekanan"></span> Pa</p>
+                        </div>
+                   </div>
+
+                </div>
+            </div>
+        </body>
+
+
+
+
+
+
+        <footer>
+            <div class="foot"></div>
+            <small>Copyright &copy; 2023 - Devi (3.34.30.3.06) & Yohana (3.34.30.3.26).</small><br/>
+            <small> All Rights Reserved.</small>
+        </footer>
+    </body>
+
